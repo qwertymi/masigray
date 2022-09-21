@@ -13,18 +13,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>마시그래이</title>
-  <!-- 제이쿼리CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!-- 스와이퍼 -->
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
-  <!-- 기본css/js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+  integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
 
 <body>
+
+    <!-- 안내 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <h1><i class="fas fa-exclamation-circle"></i></h1>
+        <span>이 사이트는 <b>스터디용으로 제작</b>되었으며,<br> <b>리소스의 저작권은 원저작자</b>에게 있습니다.</span>
+        <p>
+          * 해당 사이트와 관련한 문제가 있으면 
+          <a href="mailto:kimhp1216@naver.com?subject=안녕하세요.">
+            여기</a>로 연락바랍니다.<br>
+          * 본 사이트는 Chrome 에 최적화되어 있습니다.
+        </p>
+        <button class="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modalopen">
+    <button><i class="fas fa-exclamation-circle"></i></button>
+    <span>안내창보기</span>
+    </div>
+  
   <button class="gotop"></button>
 
   <!-- 모바일 메뉴 -->
@@ -247,7 +270,7 @@
             <!-- 콘트롤 -->
             <div class="sw-items-control">
               <!-- Pagination -->
-              <div class="sw-items-pg"></div>
+              <!-- <div class="sw-items-pg"></div> -->
             </div>
 
           </div>
